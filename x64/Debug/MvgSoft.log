@@ -1,0 +1,431 @@
+﻿生成启动时间为 2014/7/24 18:26:02。
+     1>项目“E:\vs\MvgSoft\MvgSoft\MvgSoft.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_ComputeMatch.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_ComputeMatch.cpp, GeneratedFiles\Release\moc_ComputeMatch.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_GlobalSfM.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_GlobalSfM.cpp, GeneratedFiles\Release\moc_GlobalSfM.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_IncrementalSfM.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_IncrementalSfM.cpp, GeneratedFiles\Release\moc_IncrementalSfM.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_LibViso.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_LibViso.cpp, GeneratedFiles\Release\moc_LibViso.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mvgsoft.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_mvgsoft.cpp, GeneratedFiles\Release\moc_mvgsoft.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_PMVSThread.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_PMVSThread.cpp, GeneratedFiles\Release\moc_PMVSThread.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_TextureMesh.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_TextureMesh.cpp, GeneratedFiles\Release\moc_TextureMesh.cpp.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\Qt5.3.1\5.3\msvc2013_64_opengl\include /I.\GeneratedFiles\Debug /ID:\Qt\Qt5.3.1\5.3\msvc2013_64_opengl\include\QtCore /ID:\Qt\Qt5.3.1\5.3\msvc2013_64_opengl\include\QtGui /ID:\Qt\Qt5.3.1\5.3\msvc2013_64_opengl\include\QtWidgets /I.\sfm /ID:\Qt\Qt5.3.1\5.3\msvc2013_64_opengl\include\QtANGLE /Zi /nologo /W1 /WX- /Od /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _OPENMP /D USE_OPENMP /D _OPENMP /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt /FS ComputeMatch.cpp ComputeMatchE.cpp
+         ComputeMatch.cpp
+     1>D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(342): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(332): 编译类 模板 成员函数“void flann::KMeansIndex<flann::DummyDistance>::buildIndexImpl(void)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(89): 参见对正在编译的类 模板 实例化“flann::KMeansIndex<flann::DummyDistance>”的引用
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(119): 参见对正在编译的类 模板 实例化“flann::needs_kdtree_distance<flann::KMeansIndex<flann::DummyDistance>>”的引用
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(171): 参见对正在编译的类 模板 实例化“flann::valid_combination<flann::KMeansIndex,Distance,ElementType>”的引用
+                 with
+                 [
+                     Distance=mvg::ComputeMatch::MetricT
+                 ]
+                 D:\OpenMVG\include\third_party/flann/flann.hpp(113): 参见对正在编译的函数 模板 实例化“flann::NNIndex<Distance> *flann::create_index_by_type<Distance>(const flann::flann_algorithm_t,const flann::Matrix<Scalar> &,const flann::IndexParams &,const Distance &)”的引用
+                 with
+                 [
+                     Distance=mvg::ComputeMatch::MetricT
+         ,            Scalar=unsigned char
+                 ]
+                 D:\OpenMVG\include\third_party/flann/flann.hpp(101): 编译类 模板 成员函数“flann::Index<Metric>::Index(const flann::Matrix<Scalar> &,const flann::IndexParams &,Distance)”时
+                 with
+                 [
+                     Metric=mvg::ComputeMatch::MetricT
+         ,            Scalar=unsigned char
+         ,            Distance=mvg::ComputeMatch::MetricT
+                 ]
+                 D:\OpenMVG\include\openMVG/matching/matcher_kdtree_flann.hpp(58): 参见对正在编译的函数 模板 实例化“flann::Index<Metric>::Index(const flann::Matrix<Scalar> &,const flann::IndexParams &,Distance)”的引用
+                 with
+                 [
+                     Metric=mvg::ComputeMatch::MetricT
+         ,            Scalar=unsigned char
+         ,            Distance=mvg::ComputeMatch::MetricT
+                 ]
+                 D:\OpenMVG\include\openMVG/matching/matcher_kdtree_flann.hpp(58): 参见对正在编译的类 模板 实例化“flann::Index<Metric>”的引用
+                 with
+                 [
+                     Metric=mvg::ComputeMatch::MetricT
+                 ]
+                 D:\OpenMVG\include\openMVG/matching/matcher_kdtree_flann.hpp(47): 编译类 模板 成员函数“bool openMVG::matching::ArrayMatcher_Kdtree_Flann<unsigned char,mvg::ComputeMatch::MetricT>::Build(const Scalar *,int,int)”时
+                 with
+                 [
+                     Scalar=unsigned char
+                 ]
+                 ComputeMatch.cpp(245): 参见对正在编译的函数 模板 实例化“bool openMVG::matching::ArrayMatcher_Kdtree_Flann<unsigned char,mvg::ComputeMatch::MetricT>::Build(const Scalar *,int,int)”的引用
+                 with
+                 [
+                     Scalar=unsigned char
+                 ]
+                 ComputeMatch.cpp(244): 参见对正在编译的类 模板 实例化“openMVG::matching::ArrayMatcher_Kdtree_Flann<unsigned char,mvg::ComputeMatch::MetricT>”的引用
+     1>D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(308): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(298): 编译类 模板 成员函数“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::buildIndexImpl(void)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(89): 参见对正在编译的类 模板 实例化“flann::HierarchicalClusteringIndex<flann::DummyDistance>”的引用
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(119): 参见对正在编译的类 模板 实例化“flann::needs_kdtree_distance<flann::HierarchicalClusteringIndex<flann::DummyDistance>>”的引用
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(180): 参见对正在编译的类 模板 实例化“flann::valid_combination<flann::HierarchicalClusteringIndex,Distance,ElementType>”的引用
+                 with
+                 [
+                     Distance=mvg::ComputeMatch::MetricT
+                 ]
+     1>D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(702): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(543): 编译类 模板 成员函数“void flann::KMeansIndex<flann::DummyDistance>::computeClustering(flann::KMeansIndex<flann::DummyDistance>::Node *,int *,int,int)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(344): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::computeClustering(flann::KMeansIndex<flann::DummyDistance>::Node *,int *,int,int)”的引用
+     1>D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(516): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(472): 编译类 模板 成员函数“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::computeClustering(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *,int *,int)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(309): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::computeClustering(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *,int *,int)”的引用
+     1>D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(469): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(468): 编译类 模板 成员函数“void flann::KMeansIndex<flann::DummyDistance>::copyTree(flann::KMeansIndex<flann::DummyDistance>::Node *&,flann::KMeansIndex<flann::DummyDistance>::Node *const &)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(157): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::copyTree(flann::KMeansIndex<flann::DummyDistance>::Node *&,flann::KMeansIndex<flann::DummyDistance>::Node *const &)”的引用
+     1>D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(426): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(425): 编译类 模板 成员函数“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::copyTree(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *&,flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *const &)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(146): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::copyTree(flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *&,flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node *const &)”的引用
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\algorithm(24): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\algorithm(33): 参见对正在编译的函数 模板 实例化“void std::_For_each<unsigned __int64*,_Fn1>(_InIt,_InIt,_Fn1 &)”的引用
+                 with
+                 [
+                     _Fn1=std::binder1st<std::mem_fun1_t<void,lemon::UnionFindEnum<openMVG::tracks::TracksBuilder::IndexMap>,int>>
+         ,            _InIt=unsigned __int64 *
+                 ]
+                 D:\OpenMVG\include\openMVG/tracks/tracks.hpp(242): 参见对正在编译的函数 模板 实例化“_Fn1 std::for_each<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned __int64>>>,std::binder1st<std::mem_fun1_t<void,lemon::UnionFindEnum<openMVG::tracks::TracksBuilder::IndexMap>,int>>>(_InIt,_InIt,_Fn1)”的引用
+                 with
+                 [
+                     _Fn1=std::binder1st<std::mem_fun1_t<void,lemon::UnionFindEnum<openMVG::tracks::TracksBuilder::IndexMap>,int>>
+         ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned __int64>>>
+                 ]
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+                 D:\OpenMVG\include\third_party\flann/algorithms/kdtree_single_index.h(253): 参见对正在编译的函数 模板 实例化“_OutIt std::copy<float*,T*>(_InIt,_InIt,_OutIt)”的引用
+                 with
+                 [
+                     _OutIt=float *
+         ,            T=float
+         ,            _InIt=float *
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/kdtree_single_index.h(240): 编译类 模板 成员函数“void flann::KDTreeSingleIndex<flann::DummyDistance>::buildIndexImpl(void)”时
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(89): 参见对正在编译的类 模板 实例化“flann::KDTreeSingleIndex<flann::DummyDistance>”的引用
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(119): 参见对正在编译的类 模板 实例化“flann::needs_kdtree_distance<flann::KDTreeSingleIndex<flann::DummyDistance>>”的引用
+                 D:\OpenMVG\include\third_party\flann/algorithms/all_indices.h(157): 参见对正在编译的类 模板 实例化“flann::valid_combination<flann::KDTreeSingleIndex,Distance,ElementType>”的引用
+                 with
+                 [
+                     Distance=mvg::ComputeMatch::MetricT
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : 参见“std::_Copy_impl”的声明
+     1>D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(249): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(26): 参见对正在编译的函数 模板 实例化“void flann::serialization::access::serialize<Archive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(40): 参见对正在编译的函数 模板 实例化“void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     OutputArchive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>
+         ,            Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::KMeansIndex<flann::DummyDistance>
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::KMeansIndex<flann::DummyDistance>
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(265): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(265): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(263): 编译类 模板 成员函数“void flann::KMeansIndex<flann::DummyDistance>::saveIndex(FILE *)”时
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+     1>D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(244): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(26): 参见对正在编译的函数 模板 实例化“void flann::serialization::access::serialize<Archive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(40): 参见对正在编译的函数 模板 实例化“void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     OutputArchive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+         ,            Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(261): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(261): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(259): 编译类 模板 成员函数“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::saveIndex(FILE *)”时
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+     1>D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(441): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(26): 参见对正在编译的函数 模板 实例化“void flann::serialization::access::serialize<Archive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(40): 参见对正在编译的函数 模板 实例化“void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     OutputArchive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+         ,            Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::KMeansIndex<flann::DummyDistance>::Node
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::KMeansIndex<flann::DummyDistance>::Node
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(251): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>::Node>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/kmeans_index.h(251): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::KMeansIndex<flann::DummyDistance>::Node>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::KMeansIndex<flann::DummyDistance>::Node
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::KMeansIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+     1>D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(394): warning C4291: “void *operator new(size_t,flann::PooledAllocator &)”: 未找到匹配的删除运算符；如果初始化引发异常，则不会释放内存
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(26): 参见对正在编译的函数 模板 实例化“void flann::serialization::access::serialize<Archive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(40): 参见对正在编译的函数 模板 实例化“void flann::serialization::serialize<OutputArchive,T>(Archive &,T &)”的引用
+                 with
+                 [
+                     OutputArchive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+         ,            Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(296): 参见对正在编译的函数 模板 实例化“void flann::serialization::Serializer<T>::save<Archive>(OutputArchive &,const T &)”的引用
+                 with
+                 [
+                     T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+         ,            Archive=flann::serialization::SaveArchive
+         ,            OutputArchive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(246): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+                 ]
+                 D:\OpenMVG\include\third_party\flann/algorithms/hierarchical_clustering_index.h(246): 参见对正在编译的函数 模板 实例化“Archive &flann::serialization::OutputArchive<Archive>::operator &<flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node>(const T &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+         ,            T=flann::HierarchicalClusteringIndex<flann::DummyDistance>::Node
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/serialization.h(18): 参见对正在编译的函数 模板 实例化“void flann::HierarchicalClusteringIndex<flann::DummyDistance>::serialize<Archive>(Archive &)”的引用
+                 with
+                 [
+                     Archive=flann::serialization::SaveArchive
+                 ]
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+                 D:\OpenMVG\include\third_party\flann/util/allocator.h(197) : 参见“operator new”的声明
+         ComputeMatchE.cpp
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\algorithm(24): warning C4267: “参数”: 从“size_t”转换到“const int”，可能丢失数据
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\algorithm(33): 参见对正在编译的函数 模板 实例化“void std::_For_each<unsigned __int64*,_Fn1>(_InIt,_InIt,_Fn1 &)”的引用
+                 with
+                 [
+                     _Fn1=std::binder1st<std::mem_fun1_t<void,lemon::UnionFindEnum<openMVG::tracks::TracksBuilder::IndexMap>,int>>
+         ,            _InIt=unsigned __int64 *
+                 ]
+                 D:\OpenMVG\include\openMVG/tracks/tracks.hpp(242): 参见对正在编译的函数 模板 实例化“_Fn1 std::for_each<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned __int64>>>,std::binder1st<std::mem_fun1_t<void,lemon::UnionFindEnum<openMVG::tracks::TracksBuilder::IndexMap>,int>>>(_InIt,_InIt,_Fn1)”的引用
+                 with
+                 [
+                     _Fn1=std::binder1st<std::mem_fun1_t<void,lemon::UnionFindEnum<openMVG::tracks::TracksBuilder::IndexMap>,int>>
+         ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<unsigned __int64>>>
+                 ]
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\vs\MvgSoft\x64\Debug\\MvgSoft.exe" /NOLOGO /LIBPATH:D:\Qt\Qt5.3.1\5.3\msvc2013_64_opengl\lib /LIBPATH:D:\OpenMVG\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\vs\MvgSoft\x64\Debug\MvgSoft.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\vs\MvgSoft\x64\Debug\MvgSoft.lib" /MACHINE:X64 x64\Debug\ANNWrapper.obj
+         x64\Debug\bundle.obj
+         x64\Debug\graclus.obj
+         x64\Debug\camera.obj
+         x64\Debug\image.obj
+         x64\Debug\photo.obj
+         x64\Debug\photoSetS.obj
+         x64\Debug\ComputeMatch.obj
+         x64\Debug\ComputeMatchE.obj
+         x64\Debug\ComputeMatchF.obj
+         x64\Debug\ComputeMatchH.obj
+         x64\Debug\moc_ComputeMatch.obj
+         x64\Debug\moc_GlobalSfM.obj
+         x64\Debug\moc_IncrementalSfM.obj
+         x64\Debug\moc_LibViso.obj
+         x64\Debug\moc_mvgsoft.obj
+         x64\Debug\moc_PMVSThread.obj
+         x64\Debug\moc_TextureMesh.obj
+         x64\Debug\qrc_mvgsoft.obj
+         x64\Debug\GlobalSfM.obj
+         x64\Debug\IncrementalSfM.obj
+         x64\Debug\vfilter.obj
+         x64\Debug\matcher.obj
+         x64\Debug\matrix.obj
+         x64\Debug\reconstruction.obj
+         x64\Debug\triangle.obj
+         x64\Debug\viso.obj
+         x64\Debug\viso_mono.obj
+         x64\Debug\viso_stereo.obj
+         x64\Debug\LibViso.obj
+         x64\Debug\main.obj
+         x64\Debug\mvgsoft.obj
+         x64\Debug\PMVSThread.obj
+         x64\Debug\detectFeatures.obj
+         x64\Debug\detector.obj
+         x64\Debug\dog.obj
+         x64\Debug\expand.obj
+         x64\Debug\filter.obj
+         x64\Debug\findMatch.obj
+         x64\Debug\harris.obj
+         x64\Debug\optim.obj
+         x64\Debug\option.obj
+         x64\Debug\patch.obj
+         x64\Debug\patchOrganizerS.obj
+         x64\Debug\point.obj
+         x64\Debug\seed.obj
+         x64\Debug\SFMToolKits.obj
+         x64\Debug\SfMGlobalEngine.obj
+         x64\Debug\SfMIncrementalEngine.obj
+         x64\Debug\TextureMesh.obj
+         MvgSoft.vcxproj -> E:\vs\MvgSoft\x64\Debug\MvgSoft.exe
+     1>已完成生成项目“E:\vs\MvgSoft\MvgSoft\MvgSoft.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:04:02.21

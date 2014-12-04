@@ -1,0 +1,65 @@
+﻿生成启动时间为 2014/6/27 20:13:30。
+     1>项目“E:\vs2012workspace\MvgSoft\MvgSoft\MvgSoft.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mvgsoft.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_mvgsoft.cpp, GeneratedFiles\Release\moc_mvgsoft.cpp.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /ID:\Qt\Qt5.3.0\5.3\msvc2013\include /I.\GeneratedFiles\Release /ID:\Qt\Qt5.3.0\5.3\msvc2013\include\QtCore /ID:\Qt\Qt5.3.0\5.3\msvc2013\include\QtGui /ID:\Qt\Qt5.3.0\5.3\msvc2013\include\QtWidgets /I.\sfm /ID:\Qt\Qt5.3.0\5.3\msvc2013\include\QtANGLE /ID:\eigen3.2 /ID:\OpenMVG\include\dependencies /ID:\OpenMVG\include /ID:\OpenMVG\include\patented /ID:\OpenMVG\include\third_party /ID:\OpenMVG\include\dependencies\osi_clp\clp /ID:\OpenMVG\include\dependencies\osi_clp\clp\OsiClp /ID:\OpenMVG\include\dependencies\osi_clp\CoinUtils /ID:\OpenMVG\include\dependencies\osi_clp\Osi /ID:\OpenMVG\include\dependencies\osi_clp\Osi\Osi /ID:\OpenMVG\include\dependencies\osi_clp\Osi\OsiMsk /ID:\OpenMVG\include\CPMVS /ID:\OpenMVG\include\third_party\pthread /ID:\OpenMVG\include\third_party\graclus1.2 /I"D:\OpenMVG\include\third_party\lmfit-3.2" /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D _OPENMP /D USE_OPENMP /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt sfm\SfMGlobalEngine.cpp
+         SfMGlobalEngine.cpp
+     1>D:\OpenMVG\include\third_party\ceres/types.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>D:\OpenMVG\include\third_party\ceres/solver.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\numeric(20): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\numeric(31): 参见对正在编译的函数 模板 实例化“_Ty std::_Accumulate<double*,_Ty,_Fn2>(_InIt,_InIt,_Ty,_Fn2)”的引用
+                 with
+                 [
+                     _Ty=float
+         ,            _Fn2=std::plus<void>
+         ,            _InIt=double *
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\numeric(39): 参见对正在编译的函数 模板 实例化“_Ty std::accumulate<_InIt,_Ty,std::plus<void>>(_InIt,_InIt,_Ty,_Fn2)”的引用
+                 with
+                 [
+                     _Ty=float
+         ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>
+         ,            _Fn2=std::plus<void>
+                 ]
+                 sfm\SfMGlobalEngine.cpp(228): 参见对正在编译的函数 模板 实例化“_Ty std::accumulate<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,float>(_InIt,_InIt,_Ty)”的引用
+                 with
+                 [
+                     _Ty=float
+         ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\vs2012workspace\MvgSoft\Win32\Release\\MvgSoft.exe" /NOLOGO /LIBPATH:D:\Qt\Qt5.3.0\5.3\msvc2013\lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"E:\vs2012workspace\MvgSoft\Win32\Release\MvgSoft.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\vs2012workspace\MvgSoft\Win32\Release\MvgSoft.lib" /MACHINE:X86 /SAFESEH Release\ANNWrapper.obj
+         Release\bundle.obj
+         Release\graclus.obj
+         Release\camera.obj
+         Release\image.obj
+         Release\photo.obj
+         Release\photoSetS.obj
+         Release\qrc_mvgsoft.obj
+         Release\moc_mvgsoft.obj
+         Release\main.obj
+         Release\mvgsoft.obj
+         Release\detectFeatures.obj
+         Release\detector.obj
+         Release\dog.obj
+         Release\expand.obj
+         Release\filter.obj
+         Release\findMatch.obj
+         Release\harris.obj
+         Release\optim.obj
+         Release\option.obj
+         Release\patch.obj
+         Release\patchOrganizerS.obj
+         Release\point.obj
+         Release\seed.obj
+         Release\SFMToolKits.obj
+         Release\SfMGlobalEngine.obj
+         Release\SfMIncrementalEngine.obj
+         Release\TextureMesh.obj
+            正在创建库 E:\vs2012workspace\MvgSoft\Win32\Release\MvgSoft.lib 和对象 E:\vs2012workspace\MvgSoft\Win32\Release\MvgSoft.exp
+         MvgSoft.vcxproj -> E:\vs2012workspace\MvgSoft\Win32\Release\MvgSoft.exe
+     1>已完成生成项目“E:\vs2012workspace\MvgSoft\MvgSoft\MvgSoft.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:01:09.88

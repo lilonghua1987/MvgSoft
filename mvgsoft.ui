@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MvgSoftClass</class>
+ <widget class="QMainWindow" name="MvgSoftClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MvgSoft</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpen">
+    <property name="title">
+     <string>Open</string>
+    </property>
+    <property name="icon">
+     <iconset resource="mvgsoft.qrc">
+      <normaloff>:/MvgSoft/openFile</normaloff>:/MvgSoft/openFile</iconset>
+    </property>
+    <addaction name="actionFiles"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <property name="icon">
+     <iconset resource="mvgsoft.qrc">
+      <normaloff>:/MvgSoft/Tools</normaloff>:/MvgSoft/Tools</iconset>
+    </property>
+    <widget class="QMenu" name="menuMatche">
+     <property name="title">
+      <string>Matche</string>
+     </property>
+     <property name="icon">
+      <iconset resource="mvgsoft.qrc">
+       <normaloff>:/MvgSoft/match</normaloff>:/MvgSoft/match</iconset>
+     </property>
+     <addaction name="actionEMatch"/>
+     <addaction name="actionFMatch"/>
+     <addaction name="actionHMatch"/>
+    </widget>
+    <widget class="QMenu" name="menuPipeLine">
+     <property name="title">
+      <string>PipeLine</string>
+     </property>
+     <property name="icon">
+      <iconset resource="mvgsoft.qrc">
+       <normaloff>:/MvgSoft/piple</normaloff>:/MvgSoft/piple</iconset>
+     </property>
+     <addaction name="actionCMPMVS"/>
+     <addaction name="actionPMVS"/>
+     <addaction name="actionMeshLab"/>
+    </widget>
+    <addaction name="actionComputeFocal"/>
+    <addaction name="menuMatche"/>
+    <addaction name="menuPipeLine"/>
+    <addaction name="actionCMVS"/>
+    <addaction name="actionMesh"/>
+   </widget>
+   <widget class="QMenu" name="menuReconstruct">
+    <property name="title">
+     <string>Reconstruct</string>
+    </property>
+    <property name="icon">
+     <iconset resource="mvgsoft.qrc">
+      <normaloff>:/MvgSoft/reconstruct</normaloff>:/MvgSoft/reconstruct</iconset>
+    </property>
+    <addaction name="actionIncremental"/>
+    <addaction name="actionGlobal"/>
+    <addaction name="actionPMVS2"/>
+    <addaction name="actionLibViso"/>
+   </widget>
+   <addaction name="menuOpen"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuReconstruct"/>
+  </widget>
+  <action name="actionFiles">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/Images</normaloff>:/MvgSoft/Images</iconset>
+   </property>
+   <property name="text">
+    <string>OpenFiles</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F</string>
+   </property>
+  </action>
+  <action name="actionComputeFocal">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/Focal</normaloff>:/MvgSoft/Focal</iconset>
+   </property>
+   <property name="text">
+    <string>ComputeFocal</string>
+   </property>
+  </action>
+  <action name="actionIncremental">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/incremental</normaloff>:/MvgSoft/incremental</iconset>
+   </property>
+   <property name="text">
+    <string>Incremental</string>
+   </property>
+  </action>
+  <action name="actionGlobal">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/global</normaloff>:/MvgSoft/global</iconset>
+   </property>
+   <property name="text">
+    <string>Global</string>
+   </property>
+  </action>
+  <action name="actionEMatch">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/eMatrix</normaloff>:/MvgSoft/eMatrix</iconset>
+   </property>
+   <property name="text">
+    <string>EMatch</string>
+   </property>
+  </action>
+  <action name="actionFMatch">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/fMatrix</normaloff>:/MvgSoft/fMatrix</iconset>
+   </property>
+   <property name="text">
+    <string>FMatch</string>
+   </property>
+  </action>
+  <action name="actionHMatch">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/hMatrix</normaloff>:/MvgSoft/hMatrix</iconset>
+   </property>
+   <property name="text">
+    <string>HMatch</string>
+   </property>
+  </action>
+  <action name="actionCMPMVS">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/CMPMVS</normaloff>:/MvgSoft/CMPMVS</iconset>
+   </property>
+   <property name="text">
+    <string>CMPMVS</string>
+   </property>
+  </action>
+  <action name="actionPMVS">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/PMVS</normaloff>:/MvgSoft/PMVS</iconset>
+   </property>
+   <property name="text">
+    <string>PMVS</string>
+   </property>
+  </action>
+  <action name="actionMeshLab">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/meshlab</normaloff>:/MvgSoft/meshlab</iconset>
+   </property>
+   <property name="text">
+    <string>MeshLab</string>
+   </property>
+  </action>
+  <action name="actionCMVS">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/CMVS</normaloff>:/MvgSoft/CMVS</iconset>
+   </property>
+   <property name="text">
+    <string>CMVS</string>
+   </property>
+  </action>
+  <action name="actionPMVS2">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/PMVS2</normaloff>:/MvgSoft/PMVS2</iconset>
+   </property>
+   <property name="text">
+    <string>PMVS2</string>
+   </property>
+  </action>
+  <action name="actionMesh">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/Mesh</normaloff>:/MvgSoft/Mesh</iconset>
+   </property>
+   <property name="text">
+    <string>Mesh</string>
+   </property>
+  </action>
+  <action name="actionLibViso">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/LibViso</normaloff>:/MvgSoft/LibViso</iconset>
+   </property>
+   <property name="text">
+    <string>LibViso</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mvgsoft.qrc"/>
+ </resources>
+ <connections/>
+</ui>

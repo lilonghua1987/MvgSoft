@@ -1,0 +1,7 @@
+ currentThreadId : 00000000662714B0
+setParamater is ok !
+extractFeature -> CPU Cores :2
+ThreadID = 6028, jobs = 0
+ThreadID = 5984, jobs = 1
+ThreadID = 6028, jobs = 2
+ThreadID = 5984, jobs = 3

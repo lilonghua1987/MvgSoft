@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{790265d1-f823-41db-b68f-3dfda588b7c8}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{98ee28b6-a4f2-45e1-b00f-9288a845c85e}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="sfm">
+      <UniqueIdentifier>{7ab1eb2a-15cc-4665-be39-9175789d4b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sfm\Header">
+      <UniqueIdentifier>{49150319-984f-48eb-b9ff-9877b098b45d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sfm\Source">
+      <UniqueIdentifier>{087fa4ee-e024-4de9-a353-9b993892f7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmvs">
+      <UniqueIdentifier>{22ce367d-00a8-41a3-91a1-67b7558dc141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmvs\Header">
+      <UniqueIdentifier>{351d0780-4a40-4ec1-8c5c-864c29666c2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmvs\Source">
+      <UniqueIdentifier>{e6f4ca72-872f-4ae0-8d4b-14afb0bdda72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pmvs">
+      <UniqueIdentifier>{249ef619-1d2c-4b9c-b3ce-a0089730cd21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pmvs\Header">
+      <UniqueIdentifier>{ef64f23a-b6dc-4101-ac7f-4cf5116ea703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pmvs\Source">
+      <UniqueIdentifier>{cafece71-0e51-4319-9366-e0724c2efc0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libviso">
+      <UniqueIdentifier>{ca8e4f4b-701a-4fa9-bf51-7d1984ecd15e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libviso\header">
+      <UniqueIdentifier>{396287f4-7927-408b-90ef-84b957281be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libviso\source">
+      <UniqueIdentifier>{428d2a6e-5dc0-402c-9216-eac26f339ddf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mvgsoft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_mvgsoft.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mvgsoft.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_mvgsoft.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sfm\SfMIncrementalEngine.cpp">
+      <Filter>sfm\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SFMToolKits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sfm\SfMGlobalEngine.cpp">
+      <Filter>sfm\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmvs\bundle.cc">
+      <Filter>cmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmvs\graclus.cc">
+      <Filter>cmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmvs\image\camera.cc">
+      <Filter>cmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmvs\image\image.cc">
+      <Filter>cmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmvs\image\photo.cc">
+      <Filter>cmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="cmvs\image\photoSetS.cc">
+      <Filter>cmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\detectFeatures.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\detector.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\dog.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\expand.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\filter.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\findMatch.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\harris.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\optim.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\option.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\patch.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\patchOrganizerS.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\point.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="pmvs\seed.cc">
+      <Filter>pmvs\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ANNWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ComputeMatch.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ComputeMatch.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeMatchE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeMatchF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputeMatchH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IncrementalSfM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IncrementalSfM.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IncrementalSfM.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalSfM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GlobalSfM.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GlobalSfM.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="PMVSThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PMVSThread.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PMVSThread.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureMesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TextureMesh.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TextureMesh.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="LibViso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LibViso.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LibViso.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\matcher.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\matrix.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\reconstruction.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\triangle.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\viso.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\viso_mono.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\viso_stereo.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+    <ClCompile Include="libvision\vfilter.cpp">
+      <Filter>libviso\source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mvgsoft.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mvgsoft.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mvgsoft.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ComputeMatch.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IncrementalSfM.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GlobalSfM.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PMVSThread.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TextureMesh.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LibViso.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_mvgsoft.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\openmvg.h">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\pairwiseAdjacencyDisplay.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMEngine.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMIncrementalEngine.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMIOHelper.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMPlyHelper.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMReconstructionData.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMRobust.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SFMToolKits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMGlobal_tij_computation.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMGlobalEngine.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMGlobalEngine_triplet_t_estimator.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\indexedImageGraph.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\indexedImageGraphExport.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\mutexSet.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\SfMBundleAdjustmentHelper_tonly.hpp">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="sfm\document.h">
+      <Filter>sfm\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cmvs\bundle.h">
+      <Filter>cmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cmvs\graclus.h">
+      <Filter>cmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cmvs\image\camera.h">
+      <Filter>cmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cmvs\image\image.h">
+      <Filter>cmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cmvs\image\photo.h">
+      <Filter>cmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="cmvs\image\photoSetS.h">
+      <Filter>cmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\detectFeatures.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\detector.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\dog.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\expand.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\filter.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\findMatch.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\harris.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\optim.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\option.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\patch.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\patchOrganizerS.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\point.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pmvs\seed.h">
+      <Filter>pmvs\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ANNWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeMatchE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeMatchF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputeMatchH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\matcher.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\matrix.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\triangle.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\viso.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\viso_mono.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\viso_stereo.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\reconstruction.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="libvision\vfilter.h">
+      <Filter>libviso\header</Filter>
+    </ClInclude>
+    <ClInclude Include="MatcherThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DSIFT.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
