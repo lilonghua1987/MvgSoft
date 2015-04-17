@@ -18,6 +18,7 @@
 #include "PMVSThread.h"
 #include "TextureMesh.h"
 #include "LibViso.h"
+#include "ColorHarmonization.h"
 
 class MvgSoft : public QMainWindow
 {
@@ -43,6 +44,7 @@ private slots:
 	bool pmvs();
 	bool mesh();
 	bool libViso();
+	bool colorHarm();
 
 public slots:
 	void updateStatues(const QString& message);
@@ -64,6 +66,7 @@ private:
 	mvg::PMVSThread* pThread;
 	mesh::TextureMesh* tThread;
 	LibViso* lThread;
+	mvg::ColorHarmonization* chTread;
 };
 
 #endif // MVGSOFT_H

@@ -11,6 +11,7 @@ MvgSoft::MvgSoft(QWidget *parent)
 	pThread = nullptr;
 	tThread = nullptr;
 	lThread = nullptr;
+	chTread = nullptr;
 
 	connect(ui.actionFiles, SIGNAL(triggered()), this, SLOT(selectInputDir()));
 	connect(ui.actionComputeFocal, SIGNAL(triggered()), this, SLOT(computeFocal()));
@@ -26,6 +27,7 @@ MvgSoft::MvgSoft(QWidget *parent)
 	connect(ui.actionPMVS2, SIGNAL(triggered()), this, SLOT(pmvs()));
 	connect(ui.actionMesh, SIGNAL(triggered()), this, SLOT(mesh()));
 	connect(ui.actionLibViso, SIGNAL(triggered()), this, SLOT(libViso()));
+	connect(ui.actionColor, SIGNAL(triggered()), this, SLOT(colorHarm()));
 }
 
 MvgSoft::~MvgSoft()
@@ -36,6 +38,7 @@ MvgSoft::~MvgSoft()
 	if (pThread) delete pThread;
 	if (tThread) delete tThread;
 	if (lThread) delete lThread;
+	if (chTread) delete chTread;
 }
 
 
@@ -729,6 +732,35 @@ bool MvgSoft::libViso()
 	else
 	{
 		QMessageBox::warning(NULL, QString("MvgSoft Info"), QString("You select directory  wrong !"));
+		return false;
+	}
+}
+
+bool MvgSoft::colorHarm()
+{
+	if (imgDir.size() < 1)
+	{
+		imgDir = selectDir(QString("Select Input Images Directory"));
+	}
+
+	QString outDir = selectDir(QString("Select Output Files Directory"));
+
+	QString mDir = selectFile(QString("Select Match File"), QString("All Files(*.txt *.TXT)"));
+
+	if (imgDir.size() > 0 && outDir.size() > 0 && mDir.size())
+	{
+		chTread = new mvg::ColorHarmonization(this);
+		connect(chTread, SIGNAL(finished()), this, SLOT(updateFinished()));
+		connect(chTread, SIGNAL(sendStatues(QString)), this, SLOT(updateStatues(QString)));
+		chTread->setParamters(imgDir, mDir, outDir);
+		chTread->start();
+		this->ui.actionColor->setDisabled(true);
+		return true;
+	}
+	else
+	{
+		QMessageBox::warning(NULL, QString("MvgSoft Info"), QString("You select directory  wrong !"));
+		this->ui.actionColor->setEnabled(true);
 		return false;
 	}
 }

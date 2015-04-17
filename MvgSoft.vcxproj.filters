@@ -242,6 +242,18 @@
     <ClCompile Include="libvision\vfilter.cpp">
       <Filter>libviso\source</Filter>
     </ClCompile>
+    <ClCompile Include="ColorHarmonizationEngineGlobal.cpp">
+      <Filter>sfm\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorHarmonization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorHarmonization.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorHarmonization.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mvgsoft.h">
@@ -269,6 +281,9 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="LibViso.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ColorHarmonization.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -425,6 +440,9 @@
     </ClInclude>
     <ClInclude Include="DSIFT.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorHarmonizationEngineGlobal.h">
+      <Filter>sfm\Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

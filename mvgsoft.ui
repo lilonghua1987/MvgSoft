@@ -71,6 +71,7 @@
     <addaction name="menuPipeLine"/>
     <addaction name="actionCMVS"/>
     <addaction name="actionMesh"/>
+    <addaction name="actionColor"/>
    </widget>
    <widget class="QMenu" name="menuReconstruct">
     <property name="title">
@@ -216,6 +217,15 @@
    </property>
    <property name="text">
     <string>LibViso</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="mvgsoft.qrc">
+     <normaloff>:/MvgSoft/ColorHarm</normaloff>:/MvgSoft/ColorHarm</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
    </property>
   </action>
  </widget>

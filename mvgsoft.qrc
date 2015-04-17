@@ -1,23 +1,24 @@
 <RCC>
-  <qresource prefix="/MvgSoft">
-    <file alias="openFile">Resources/20140609020210972_easyicon_net_32.ico</file>
-    <file alias="Tools">Resources/20140609054603322_easyicon_net_32.ico</file>
-    <file alias="Images">Resources/20140609064216756_easyicon_net_32.ico</file>
-    <file alias="Focal">Resources/20140609064307348_easyicon_net_32.ico</file>
-    <file alias="match">Resources/20140610100448630_easyicon_net_32.ico</file>
-    <file alias="reconstruct">Resources/20140610045939790_easyicon_net_32.ico</file>
-    <file alias="incremental">Resources/20140610050027673_easyicon_net_32.ico</file>
-    <file alias="global">Resources/20140610050041556_easyicon_net_32.ico</file>
-    <file alias="eMatrix">Resources/20140611110609785_easyicon_net_32.ico</file>
-    <file alias="fMatrix">Resources/2014061111062117_easyicon_net_32.ico</file>
-    <file alias="hMatrix">Resources/20140611110715936_easyicon_net_32.ico</file>
-    <file alias="CMPMVS">Resources/20140611021905942_easyicon_net_32.ico</file>
-    <file alias="PMVS">Resources/20140611021922674_easyicon_net_32.ico</file>
-    <file alias="LibViso">Resources/20140715082158499_easyicon_net_32.ico</file>
-    <file alias="piple">Resources/20140611022221670_easyicon_net_32.ico</file>
-    <file alias="meshlab">Resources/20140613032012941_easyicon_net_32.ico</file>
-    <file alias="CMVS">Resources/20140617051304299_easyicon_net_32.ico</file>
-    <file alias="PMVS2">Resources/20140617051259429_easyicon_net_32.ico</file>
-    <file alias="Mesh">Resources/20140620101732970_easyicon_net_32.ico</file>
-  </qresource>
+    <qresource prefix="/MvgSoft">
+        <file alias="openFile">Resources/20140609020210972_easyicon_net_32.ico</file>
+        <file alias="Tools">Resources/20140609054603322_easyicon_net_32.ico</file>
+        <file alias="Images">Resources/20140609064216756_easyicon_net_32.ico</file>
+        <file alias="Focal">Resources/20140609064307348_easyicon_net_32.ico</file>
+        <file alias="match">Resources/20140610100448630_easyicon_net_32.ico</file>
+        <file alias="reconstruct">Resources/20140610045939790_easyicon_net_32.ico</file>
+        <file alias="incremental">Resources/20140610050027673_easyicon_net_32.ico</file>
+        <file alias="global">Resources/20140610050041556_easyicon_net_32.ico</file>
+        <file alias="eMatrix">Resources/20140611110609785_easyicon_net_32.ico</file>
+        <file alias="fMatrix">Resources/2014061111062117_easyicon_net_32.ico</file>
+        <file alias="hMatrix">Resources/20140611110715936_easyicon_net_32.ico</file>
+        <file alias="CMPMVS">Resources/20140611021905942_easyicon_net_32.ico</file>
+        <file alias="PMVS">Resources/20140611021922674_easyicon_net_32.ico</file>
+        <file alias="LibViso">Resources/20140715082158499_easyicon_net_32.ico</file>
+        <file alias="piple">Resources/20140611022221670_easyicon_net_32.ico</file>
+        <file alias="meshlab">Resources/20140613032012941_easyicon_net_32.ico</file>
+        <file alias="CMVS">Resources/20140617051304299_easyicon_net_32.ico</file>
+        <file alias="PMVS2">Resources/20140617051259429_easyicon_net_32.ico</file>
+        <file alias="Mesh">Resources/20140620101732970_easyicon_net_32.ico</file>
+        <file alias="ColorHarm">Resources/20150122034817292_easyicon_net_32.ico</file>
+    </qresource>
 </RCC>
